@@ -19,7 +19,7 @@ app.use(body_parser.json());
 
 // serve root page
 app.get('/', function (req, res) {
-    res.send("API specifics. List all => GET /product | List Product => GET /product/id | Add Product => POST /product | Update Product => PUT /product/id | Delete Product => DEL /product/id");
+    res.send("API specifics.<br><br> List all => GET /product <br> View Product => GET /product/id <br> Add Product => POST /product <br> Update Product => PUT /product/id <br> Delete Product => DEL /product/id <br> Prodcut Structure { id, name, price, qty }");
 });
 
 // list products
